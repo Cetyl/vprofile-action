@@ -30,7 +30,6 @@ jobs:
         uses: warchant/setup-sonar-scanner@v7
         with:
            sonar-scanner-version: '4.6.0'
-        runs-on: ubuntu-latest
         strategy:
              matrix:
                  node-version: [20.x]
