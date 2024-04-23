@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: codecheckout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.0
 
       - name: Maven test
         run: mvn test
@@ -28,8 +28,7 @@ jobs:
       # #Setup sonar-scanner
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
-        with:
-           sonar-scanner-version: '4.6.0'
+        
       
 
 
